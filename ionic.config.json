@@ -1,0 +1,7 @@
+{
+  "name": "pmp-ngmodules",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

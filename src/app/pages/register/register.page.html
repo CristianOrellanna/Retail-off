@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <table>
+    <tr>
+      <td><ion-input [(ngModel)]="email" placeholder="Ingrese email"></ion-input></td>
+    </tr>
+    <tr>
+      <td><ion-input [(ngModel)]="password" placeholder="Ingrese contraseña" type="password"></ion-input></td>
+    </tr>
+    <tr>
+      <td><ion-button (click)="register($event)">Registrar</ion-button></td>
+    </tr>
+  </table>
+</ion-content>
