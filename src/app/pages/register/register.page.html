@@ -9,12 +9,15 @@
 <!--formulario-->
 <ion-card class="formulario">
     <ion-input [(ngModel)]="email" placeholder="Ingrese email"></ion-input>
-    <ion-input [(ngModel)]="password" placeholder="Ingrese contraseña" type="password"></ion-input></ion-card>
-      
-    <!--boton-->
+    <ion-input [(ngModel)]="password" placeholder="Ingrese contraseña" type="password"></ion-input>
+</ion-card>
+    <!--botones-->
 <div  class="btnRegistrar">
     <h6>La contraseña debe tener un minimo de 6 caracteres</h6>
     <ion-button (click)="register($event)">registrarse</ion-button>
+</div>
+<div class="btnVolver">
+  <ion-button routerLink="/home">Regresar</ion-button>
 </div>
 </ion-card>
 </ion-content>

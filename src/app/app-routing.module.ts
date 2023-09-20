@@ -19,6 +19,18 @@ const routes: Routes = [
     path: 'map',
     loadChildren: () => import('./pages/map/map.module').then( m => m.MapPageModule)
   },
+  {
+    path: 'history',
+    loadChildren: () => import('./pages/history/history.module').then( m => m.HistoryPageModule)
+  },
+  {
+    path: 'scan',
+    loadChildren: () => import('./pages/scan/scan.module').then( m => m.ScanPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
 ];
 
 @NgModule({
