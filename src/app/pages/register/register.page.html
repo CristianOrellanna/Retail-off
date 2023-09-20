@@ -1,19 +1,20 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true"  class="cabecera">
   <ion-toolbar>
-    <ion-title>register</ion-title>
+    <ion-title>Realizemos tu registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <table>
-    <tr>
-      <td><ion-input [(ngModel)]="email" placeholder="Ingrese email"></ion-input></td>
-    </tr>
-    <tr>
-      <td><ion-input [(ngModel)]="password" placeholder="Ingrese contraseña" type="password"></ion-input></td>
-    </tr>
-    <tr>
-      <td><ion-button (click)="register($event)">Registrar</ion-button></td>
-    </tr>
-  </table>
+  <ion-card>
+<!--formulario-->
+<ion-card class="formulario">
+    <ion-input [(ngModel)]="email" placeholder="Ingrese email"></ion-input>
+    <ion-input [(ngModel)]="password" placeholder="Ingrese contraseña" type="password"></ion-input></ion-card>
+      
+    <!--boton-->
+<div  class="btnRegistrar">
+    <h6>La contraseña debe tener un minimo de 6 caracteres</h6>
+    <ion-button (click)="register($event)">registrarse</ion-button>
+</div>
+</ion-card>
 </ion-content>
