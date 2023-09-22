@@ -1,0 +1,15 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="titulo">Realice sus pedidos con AWS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="formulario">
+  <ion-input [(ngModel)]="nombrePedido" placeholder="Ingrese nombre del objeto a solicitar"></ion-input>
+  <ion-input [(ngModel)]="cantidadObjeto" placeholder="Escriba la cantidad de objetos (con letras NO numeros) a solicitar"></ion-input>
+  <ion-input [(ngModel)]="email" placeholder="Ingrese su email"></ion-input>
+  <ion-button (click)="postPedido()">Agregar pedido</ion-button>
+</ion-card>
+</ion-content>
+

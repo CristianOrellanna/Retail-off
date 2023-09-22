@@ -10,19 +10,21 @@ import { DatalocalService } from 'src/app/services/datalocal.service';
 })
 export class ScanPage implements OnInit {
 
-  constructor(private scanner: BarcodeScanner, private service: DatalocalService) { }
+  constructor(private barcodeScanner: BarcodeScanner, private dataLocal: DatalocalService) { }
 
   ngOnInit() {
   }
 
   scan(){
-    this.scanner.scan().then(data =>{
-      if(!data.cancelled)
-        this.service.guardar(data.format, data.text)
-    })
-    .catch(err => {
-      this.service.guardar('QRCode', 'geo: -53.5, 40')
-    })
+    
+    this.barcodeScanner.scan().then(barcodeData => {
+      console.log('Barcode data', barcodeData);
+      if(!barcodeData.cancelled){
+        this.dataLocal.guardar(barcodeData.format,barcodeData.text);
+      }
+    }).catch(err => {
+      console.log('Error', err);
+      this.dataLocal.guardar('QRCode', 'geo: -33.45694, -70.64827');
+    });
   }
-
 }

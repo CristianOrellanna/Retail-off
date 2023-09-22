@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'aws',
+    loadChildren: () => import('./pages/aws/aws.module').then( m => m.AwsPageModule)
+  },
 ];
 
 @NgModule({
