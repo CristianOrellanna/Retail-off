@@ -1,3 +1,59 @@
+<ion-content>
+  <div class="header">
+    <div id="app-bar">
+      <ion-icon name="tienda"></ion-icon>
+    </div>
+
+    <div id="logo">
+      <img src="../assets/img/retail.png" alt="logo"/>
+    </div>
+    <h2>Retail off</h2>
+  </div>
+
+  <ion-card class="ion-padding">
+    <ion-card-content>
+      <h1>Iniciar sesion</h1>
+
+      <div class="label">
+          <ion-input type="text" label="Email" label-placement="floating" fill="outline" placeholder="Email" [(ngModel)]="email"></ion-input>
+          <ion-input type="text" label="Contraseña" label-placement="floating" fill="outline" placeholder="Contraseña"[(ngModel)]="password"></ion-input>
+      </div>
+
+      <ion-button expand="block" (click)="login()">Login</ion-button>
+      <ion-button expand="block" routerLink="/home">Regresar</ion-button>
+
+      <div class="line-text">
+        <span class="lines"></span>
+        <span class="text">O ingrese usando</span>
+      </div>
+
+      <div class="redes">
+        <ion-button class="btn-fb">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </ion-button>
+        <ion-button class="btn-tw">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </ion-button>
+        <ion-button class="btn-go">
+          <ion-icon name="logo-google"></ion-icon>
+        </ion-button>
+        <ion-button class="btn-ph">
+          <ion-icon name="call-outline"></ion-icon>
+        </ion-button>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+
+
+
+
+
+
+<!--
 <ion-header [translucent]="true" class="titulo">
   <ion-toolbar>
     <ion-title>Login</ion-title>
@@ -6,7 +62,6 @@
 
 <ion-content [fullscreen]="true">
   <ion-card>
-    <!--formulario-->
   <ion-item>
     <ion-label position="floating">Email</ion-label>
     <ion-input type="text" [(ngModel)]="email"></ion-input>
@@ -24,3 +79,4 @@
   </div>
 </ion-card>
 </ion-content>
+-->

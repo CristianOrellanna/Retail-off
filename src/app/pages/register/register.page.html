@@ -1,3 +1,59 @@
+<ion-content>
+  <div class="header">
+    <div id="app-bar">
+      <ion-icon name="tienda"></ion-icon>
+    </div>
+
+    <div id="logo">
+      <img src="../assets/img/retail.png" alt="logo"/>
+    </div>
+    <h2>Retail off</h2>
+  </div>
+
+  <ion-card class="ion-padding">
+    <ion-card-content>
+      <h1>Realizemos tu registro</h1>
+
+      <div class="label">
+          <ion-input type="text" label="Email" label-placement="floating" fill="outline" placeholder="Email" [(ngModel)]="email"></ion-input>
+          <ion-input type="password" label="Contraseña" label-placement="floating" fill="outline" placeholder="Contraseña"[(ngModel)]="password"></ion-input>
+      </div>
+
+      <ion-button expand="block" (click)="register($event)">Registrarse</ion-button>
+      <ion-button expand="block" routerLink="/home">Regresar</ion-button>
+
+
+      <div class="line-text">
+        <span class="lines"></span>
+        <span class="text">O ingrese usando</span>
+      </div>
+
+      <div class="redes">
+        <ion-button class="btn-fb">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </ion-button>
+        <ion-button class="btn-tw">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </ion-button>
+        <ion-button class="btn-go">
+          <ion-icon name="logo-google"></ion-icon>
+        </ion-button>
+        <ion-button class="btn-ph">
+          <ion-icon name="call-outline"></ion-icon>
+        </ion-button>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+
+
+
+
+
+
+<!--
 <ion-header [translucent]="true"  class="cabecera">
   <ion-toolbar>
     <ion-title>Realizemos tu registro</ion-title>
@@ -6,12 +62,12 @@
 
 <ion-content [fullscreen]="true">
   <ion-card>
-<!--formulario-->
+
 <ion-card class="formulario">
     <ion-input [(ngModel)]="email" placeholder="Ingrese email"></ion-input>
     <ion-input [(ngModel)]="password" placeholder="Ingrese contraseña" type="password"></ion-input>
 </ion-card>
-    <!--botones-->
+
 <div  class="btnRegistrar">
     <h6>La contraseña debe tener un minimo de 6 caracteres</h6>
     <ion-button (click)="register($event)">registrarse</ion-button>
@@ -21,3 +77,4 @@
 </div>
 </ion-card>
 </ion-content>
+-->

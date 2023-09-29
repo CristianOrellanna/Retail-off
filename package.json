@@ -33,6 +33,7 @@
     "@ionic-native/core": "^5.36.0",
     "@ionic-native/in-app-browser": "^5.36.0",
     "@ionic/angular": "^7.3.3",
+    "@ionic/lab": "^3.2.15",
     "@ionic/storage": "^4.0.0",
     "@types/mapbox-gl": "^2.7.13",
     "cordova-plugin-inappbrowser": "^5.0.0",

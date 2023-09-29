@@ -24,7 +24,7 @@ export class RegisterPage implements OnInit {
       this.router.navigate(['/map'])
     })
     .catch((err:any) =>{
-      alert('error al agregar nuevo usuario: ' + err)
+      alert('Ha ocurrido un error al agregar nuevo usuario: ' + err)
     })
   }
 }
