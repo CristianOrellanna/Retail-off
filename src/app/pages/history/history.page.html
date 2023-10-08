@@ -4,7 +4,9 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
+  <ion-card>
   <ion-list>
     <ion-item 
       *ngFor="let registro of service.guardados"
@@ -21,4 +23,6 @@
       </ion-label>
     </ion-item>
   </ion-list>
+</ion-card>
 </ion-content>
+
