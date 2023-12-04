@@ -26,7 +26,7 @@ export class LoginPage implements OnInit {
     const{email,password} = this
     try{
       const res = await this.afAuth.signInWithEmailAndPassword(email,password)
-      this.route.navigate(['logueado'])
+      this.route.navigate(['/map'])
     }catch(err:any){
       console.dir(err);
       if(err.code === "auth/invalid-email"){
