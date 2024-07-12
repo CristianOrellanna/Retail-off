@@ -8,8 +8,3 @@ MAPBOX API
 [![4.png](https://i.postimg.cc/W1nxF59F/4.png)](https://postimg.cc/JsspS5CM)
 [![5.png](https://i.postimg.cc/hGZwMfRK/5.png)](https://postimg.cc/gwRN2c07)
 [![6.png](https://i.postimg.cc/QtBzzhj1/6.png)](https://postimg.cc/CBgJByBx)
-AMAZON WEB SERVICES API
-[![transacciones-get-test.png](https://i.postimg.cc/gkb7gCQL/transacciones-get-test.png)](https://postimg.cc/yWnndbV7)
-[![transacciones-get-test-2.png](https://i.postimg.cc/tgG7JCMC/transacciones-get-test-2.png)](https://postimg.cc/3k93b7hP)
-[![transacciones-post-test.png](https://i.postimg.cc/mZ7cx9Xp/transacciones-post-test.png)](https://postimg.cc/MXKZVn81)
-[![transacciones-post-test-2.png](https://i.postimg.cc/R0j0yCcz/transacciones-post-test-2.png)](https://postimg.cc/Y4zkmHnX)
